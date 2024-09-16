@@ -17,6 +17,7 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.DeltaTracker;
 
 public class MacroCraftFabric implements ModInitializer {
     @Override
@@ -56,7 +57,7 @@ public class MacroCraftFabric implements ModInitializer {
         }
     }
 
-    private void renderMacroHud(GuiGraphics graphics, float tickDelta) {
+    private void renderMacroHud(GuiGraphics graphics, DeltaTracker tickDelta) {
         if (MacroState.LOADED_MACRO.shouldRenderHud()) {
             MacroPlayHud.render(graphics);
         }

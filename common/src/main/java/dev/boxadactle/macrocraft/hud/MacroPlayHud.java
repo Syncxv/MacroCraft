@@ -17,9 +17,9 @@ import net.minecraft.resources.ResourceLocation;
 
 public class MacroPlayHud {
 
-    public static final ResourceLocation PROGRESS_BAR = new ResourceLocation(MacroCraft.MOD_ID, "progress/progress_bar");
+    public static final ResourceLocation PROGRESS_BAR = ResourceLocation.fromNamespaceAndPath(MacroCraft.MOD_ID, "progress/progress_bar");
 
-    public static final ResourceLocation PROGRESS_BACKGROUND = new ResourceLocation(MacroCraft.MOD_ID, "progress/progress_empty");
+    public static final ResourceLocation PROGRESS_BACKGROUND = ResourceLocation.fromNamespaceAndPath(MacroCraft.MOD_ID, "progress/progress_empty");
 
     public static void render(GuiGraphics graphics) {
         // information at the top of the screen

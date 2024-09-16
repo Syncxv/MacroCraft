@@ -17,11 +17,11 @@ import net.minecraft.resources.ResourceLocation;
 
 public class MacroControls {
 
-    public static final ResourceLocation PAUSE_DISABLED = new ResourceLocation("macrocraft", "textures/gui/pause_disabled.png");
-    public static final ResourceLocation PAUSE_ENABLED = new ResourceLocation("macrocraft", "textures/gui/pause_enabled.png");
-    public static final ResourceLocation PLAY_DISABLED = new ResourceLocation("macrocraft", "textures/gui/play_disabled.png");
-    public static final ResourceLocation PLAY_ENABLED = new ResourceLocation("macrocraft", "textures/gui/play_enabled.png");
-    public static final ResourceLocation STOP = new ResourceLocation("macrocraft", "textures/gui/stop.png");
+    public static final ResourceLocation PAUSE_DISABLED = ResourceLocation.fromNamespaceAndPath("macrocraft", "textures/gui/pause_disabled.png");
+    public static final ResourceLocation PAUSE_ENABLED = ResourceLocation.fromNamespaceAndPath("macrocraft", "textures/gui/pause_enabled.png");
+    public static final ResourceLocation PLAY_DISABLED = ResourceLocation.fromNamespaceAndPath("macrocraft", "textures/gui/play_disabled.png");
+    public static final ResourceLocation PLAY_ENABLED = ResourceLocation.fromNamespaceAndPath("macrocraft", "textures/gui/play_enabled.png");
+    public static final ResourceLocation STOP = ResourceLocation.fromNamespaceAndPath("macrocraft", "textures/gui/stop.png");
 
     static int padding = 5;
 
